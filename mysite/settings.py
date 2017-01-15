@@ -25,7 +25,7 @@ SECRET_KEY = '^)*t^o37c+429fusou--onf0n%4gx457dntxuk125is*tvaqmx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['elizaramos.pythonanywhere.com']
 
 
 # Application definition
