@@ -1,2 +1,2 @@
 def post_list(request):
-    return render(request, 'blog/post_list.html', {})
+    return (request, 'blog/post_list.html', {})
