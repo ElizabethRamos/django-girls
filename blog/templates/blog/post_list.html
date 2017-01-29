@@ -3,14 +3,14 @@
         <title> Eliza's blog!</title>
     </head>
     <body>
-        <div>
-            <h1> Eliza's Blog</h1> 
-        </div>
-        <div>
-            <p>published: 23.06.2017, 19:49</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Olá Galera! meu blog está funcionando, :p</p>
-        </div>
+        
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }} </a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
     </body>
 </html>
+{% endfor %}
     
